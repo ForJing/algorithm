@@ -15,6 +15,9 @@ function quickSort(arr) {
     let pivot = arr[0];
     let less = arr.slice(1).filter(item => item <= pivot);
     let greater = arr.slice(1).filter(item => item > pivot);
-    return [...less, pivot, ...greater];
+    return [...quickSort(less), pivot, ...quickSort(greater)];
   }
 }
+
+
+
