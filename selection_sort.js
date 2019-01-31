@@ -18,6 +18,7 @@ function findSmallest(arr) {
 
 function selectionSort(arr) {
   let newArr = [];
+  // arr 是引用， length不先存起来， 后面会出bug
   const len = arr.length;
   for (let i = 0; i < len; i++) {
     let smallestIndex = findSmallest(arr);
