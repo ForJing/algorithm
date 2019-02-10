@@ -5,7 +5,7 @@
  *  一个数组，
  *  找一个基准值， 比这个值小的放左边， 比这个值大的放右边。
  *
- *
+ *  O(nlogn)
  */
 
 function quickSort(arr) {
@@ -18,6 +18,3 @@ function quickSort(arr) {
     return [...quickSort(less), pivot, ...quickSort(greater)];
   }
 }
-
-
-

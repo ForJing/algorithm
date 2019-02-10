@@ -2,6 +2,7 @@
  *  选择排序
  *  每次找出一个最小的元素， 放入新数组
  *
+ *  O(n**2)
  */
 
 function findSmallest(arr) {
